@@ -1,0 +1,45 @@
+#The last exercise in this chapter continues with 
+#the exercise from the last chapter, the calculator. 
+#In this exercise, expand the existing code by implementing 
+#the following new features: (A) Calculator does not 
+#automatically quit when the result is given, 
+#allowing user to do new calculations. 
+#The user has to select "6" in the menu to exit the program. 
+#(B) The calculator shows the selected numbers in the main menu by printing "Current numbers:" and the user-given input. By selecting "5" in the calculator menu, 
+#the user can change the given numbers.
+
+print("Calculator")
+    
+keepgoing = True
+
+while True: 
+    
+    if keepgoing:
+        num1 = int(input("Give the first number: "))
+        num2 = int(input("Give the second number: "))
+        keepgoing = False
+        
+        
+    print("(1) +")
+    print("(2) -")
+    print("(3) *")
+    print("(4) /")
+    print("(5) Change numbers")
+    print("(6) Quit")
+    print("Current numbers: ", num1, num2)
+    option = int(input("Please select something (1-6): "))
+    if option == 1:
+         print("The result is: ", num1 + num2)
+    elif option == 2:
+        print("The result is: ", num1 - num2)
+    elif option == 3:
+        print("The result is: ", num1 * num2)
+    elif option == 4:
+        print("The result is: ", num1 / num2)
+    elif option == 5:
+        keepgoing = True        
+    elif option == 6:
+        print("Thank you!")
+        break
+    else:
+        print("Selection was not correct.")

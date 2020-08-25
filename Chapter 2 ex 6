@@ -1,0 +1,15 @@
+#The last exercise in this chapter focuses on string slices.
+#Define a variable and assign it a string "desserts" as a value.
+#Then create three new variables, and assign them values 
+#by slicing the A) first 4 characters B) the last 
+#4 characters and C) the entire string 
+#backwards as given values.
+
+var = "desserts"
+var2 = var[0:4]
+var3 = var[4:8]
+var4 = var[::-1]
+
+print("The first 4 characters were: ", var2)
+print("The last 4 characters were: ", var3)
+print("The string backwards was: ", var4)

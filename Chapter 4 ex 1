@@ -1,0 +1,9 @@
+#The first exercise in the fourth chapter is a 
+#basic while-iteration. The assignment is simple: 
+#create a program which on each turn prints the round number. 
+#Start by the round number 0 and make the iteration continue for four loops.
+
+lap = 0
+while lap < 5:
+	print("This is lap ", lap)
+	lap += 1

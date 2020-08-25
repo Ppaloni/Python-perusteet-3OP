@@ -1,0 +1,25 @@
+#The last exercise of chapter 5 continues the exercise 
+#made in the previous chapter. 
+#In this exercise, expand the calculator so that the user 
+#can select what kind of calculation is done. 
+#If the user chooses 1, the calculator does addition as earlier. If 2, the calculator does substraction, if 3, it does multiplication, if 4, division.
+
+
+print("Calculator")
+num1 = int(input("Give the first number: "))
+num2 = int(input("Give the second number: "))		   		   
+print("(1) +")
+print("(2) -")
+print("(3) *")
+print("(4) /")
+option = int(input("Please select something (1-4): "))			 
+if option == 1:
+	print("The result is: ", num1 + num2)
+elif option == 2:
+	print("The result is: ", num1 - num2)
+elif option == 3:
+	print("The result is: ", num1 * num2)
+elif option == 4:
+	print("The result is: ", num1 / num2)
+else:
+	print("Selection was not correct.")

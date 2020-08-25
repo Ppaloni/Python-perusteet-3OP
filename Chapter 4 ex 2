@@ -1,0 +1,14 @@
+#The second exercise tries to elaborates on the first task. 
+#The idea is to create an iteration where the user is able to 
+#define when the loop ends by testing the input which the 
+#user gave.
+
+keepgoing = True
+
+while keepgoing: 
+    userwrote = input("Write something: ")    
+    
+    if userwrote == "quit":
+        keepgoing = False
+        print("Bye bye!")
+    else: print(userwrote)

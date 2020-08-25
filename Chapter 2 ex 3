@@ -1,0 +1,17 @@
+#In this exercise the aim is to try out different datatypes. 
+#Start by defining two variables, and assign the 
+#first variable the float value 10.6411. 
+#The second variable gets a string "Stringline!" as a value.
+#Convert the first variable to an integer, 
+#and multiply the variable with the string by 2. 
+
+val = 10.6411
+string = "Stringline!"
+
+#Convert to int
+val = int(val)
+string = string * 2
+
+print("Integer conversion cannot do roundings: ", val)
+print("Multiplying strings also causes trouble: ", string)
+

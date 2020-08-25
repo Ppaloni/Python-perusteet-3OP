@@ -1,0 +1,12 @@
+#In this exercise, the objective is to try taking input for 
+#the first time. The idea is to create a simple program 
+#which takes two numbers and perfoms an addition. 
+
+print("Calculator")
+input1 = input("Give the first number: ")
+input2 = input("Give the second number: ")
+input1 = int(input1)
+input2 = int(input2)
+sum = input1 + input2
+print("The result is: ", sum)
+

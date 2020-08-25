@@ -1,0 +1,16 @@
+#The second exercise takes another step towards more 
+#realistic programming structures. 
+#In this exercise the idea is to create an if-structure, 
+#which has another if-structure inside it.
+
+name = input("Give name: ")
+if name == "John":
+	password = input("Give password: ")
+	if name == "John" and password != "ABC123":
+		print("The password is incorrect.")
+	else:
+		print("Both inputs are correct!")
+else:
+	print("The given name is wrong.")
+
+    

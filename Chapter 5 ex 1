@@ -1,0 +1,11 @@
+#The first exercise in the fifth chapther is a straightforward 
+#file reading exercise. There is a file in the same 
+#directory with the exercise source code called "facts.txt", 
+#which has a long strip of text. 
+#Create a program which reads the entire content of 
+#the file and prints it on the screen with the text "Following was read from the file:".
+
+handle = open("facts.txt","r")
+filetext = handle.read()
+print("Following was read from the file: ", filetext)
+handle.close()

@@ -1,0 +1,19 @@
+#In the fourth exercise the idea is to define an if-structure 
+#which decides the action based on several inputs. 
+#The program asks for two numbers. If both of the numbers 
+#are even, the program prints "Both numbers are even." 
+#If only one of the numbers is even, the program prints 
+#"One of the numbers is even.". 
+#Finally, if neither of the numbers is even, the program 
+#prints "Both numbers are odd".
+
+
+num1 = int(input("Give a number: "))
+num2 = int(input("Give another number: "))
+
+if (num1 % 2) == 0 and (num2 % 2) == 0:
+	print("Both numbers are even.")
+elif (num1 % 2) == 0 and (num2 % 2) != 0 or (num1 % 2) !=0 and (num2 % 2) == 0:
+	print ("One of the numbers is even.")
+else:
+	print("Both numbers are odd.")

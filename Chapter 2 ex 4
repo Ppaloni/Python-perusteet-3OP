@@ -1,0 +1,11 @@
+#In this program the objective is to understand how the 
+#layout-characters (\t and \n} and print in general works. 
+#By using only the print command, make the interpreter to 
+#print out the following text:
+
+firstline="This here is divided to several lines:\n"
+secondline="I am still in the same print-command.\n"
+name = "Name:	Peter\n"
+job = "Job: 	Babysitter"
+
+print(firstline,secondline,name,job)
