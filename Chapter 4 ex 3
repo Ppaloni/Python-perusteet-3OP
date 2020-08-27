@@ -1,0 +1,15 @@
+#The third progam tests a for-iteration. In this program, 
+#build a calculator, which asks the user for a number, and 
+#calculates the sum of all positive numbers from 0 to the 
+#usergiven input. If the user gives the number 4, 
+#the program calculates the sum 0+1+2+3, if 7, 
+#the calculation is 0+1+2+3+4+5+6. 
+#Finally, the program produces an answer with the printout "The sum was:" and an answer.
+
+num = int(input("Give a number: "))
+total_sum = 0
+for num in range(num):
+    
+    total_sum += num
+    
+print('The sum was: ', total_sum)

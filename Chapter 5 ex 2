@@ -1,0 +1,15 @@
+#Unsurprisingly, the second exercise in this chapter 
+#discusses the task of writing to a file. 
+#Create a program which prompts the user for a file name 
+#"Give a file name: " and then for an input "Write something: ". 
+#After this, the program writes the string given by the user to the 
+#file and reports "Wrote [input] to the file [name].".
+
+
+file = str(input("Give a file name: "))
+myfile = open(file, "w")
+mytext = str(input("Write something: "))
+print("Wrote", mytext, "to the file ", file)
+myfile.write(mytext)
+myfile.close()
+

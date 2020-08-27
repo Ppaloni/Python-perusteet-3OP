@@ -1,0 +1,16 @@
+#In the third program, we take a look into the 
+#classification of file contents. In the same directory with 
+#the source code is a file "strings.txt", 
+#which has random strings in several lines. 
+#The lines can be divided into two groups: those which only 
+#have letters (a-z, A-Z) and numbers (0-9), and those which 
+#also have random special characters (?,&,@, $ ...).
+
+with open("strings.txt") as inf:
+    for line in inf:
+        line = line.rstrip()
+        if line.isalnum():
+            print("{} was ok.".format(line))
+        else:
+            print("{} was invalid.".format(line))
+
